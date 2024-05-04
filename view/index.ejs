@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Resume Builder</h1>
+    <form id="resumeForm" action="submit" method="post">
+      <!-- Personal Information -->
+      <h2>Personal Information</h2>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" />
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3"></textarea>
+
+      <!-- Education -->
+      <h2>Education</h2>
+      <label for="degree">Degree</label>
+      <input type="text" id="degree" name="degree" />
+
+      <label for="university">University</label>
+      <input type="text" id="university" name="university" />
+
+      <label for="graduationYear">Graduation Year</label>
+      <input type="text" id="graduationYear" name="graduationYear" />
+
+      <!-- Work Experience -->
+      <h2>Work Experience</h2>
+      <label for="jobTitle">Job Title</label>
+      <input type="text" id="jobTitle" name="jobTitle" />
+
+      <label for="employer">Employer</label>
+      <input type="text" id="employer" name="employer" />
+
+      <label for="workDescription">Description</label>
+      <textarea id="workDescription" name="workDescription" rows="3"></textarea>
+
+      <!-- Skills -->
+      <h2>Skills</h2>
+      <label for="skills">Skills (comma separated)</label>
+      <input type="text" id="skills" name="skills" />
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
